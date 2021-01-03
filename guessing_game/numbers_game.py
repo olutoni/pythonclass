@@ -11,13 +11,18 @@ count_number_of_tries = 1
 # Ask for the initial guess from the player
 guess = int(input("Please guess a number between 1 and 10: "))
 
+
 # If the guess is wrong, perform the following operations
 while number_to_guess != guess:
+
     print("Sorry wrong number")
 
     # check if number of tries has exceeded and break out of the loop, otherwise provide feedback to the player
     if count_number_of_tries == 4:
         break
+    elif guess == -1:
+        print(f"Cheat Mode Activated, the actual number is {number_to_guess}")
+        count_number_of_tries = 0
     elif guess < number_to_guess:
         print("Your guess was lower than the number")
     else:
