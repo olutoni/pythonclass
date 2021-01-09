@@ -12,6 +12,7 @@ friend_pizza.append("meat lovers")
 print(f"My favorite pizzas are:")
 for pizza in my_pizza:
     print(pizza)
+
 print()
 print(f"My friend's favorite pizzas are:")
 for pizza in friend_pizza:
